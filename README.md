@@ -6,16 +6,16 @@ provides an encapsulation of those capabilities for the Raspberry Pi environment
 
 ## Usage
 In order to use the module, we must require `adc0832`.  For example:
-``
+```
 var adc0832 = require("adc0832");
-``
+```
 We must also initialize the module by explicitly calling init:
-``
+```
 adc0832.init(clk, dio, cs);
-``
+```
 To retrieve a value from the IC, we can call
-``
+```
 adc0832.getValue(clk, dio, cs)
-``
+```
 The 3 parameters are the numbers of the gpio pins linked to the IC.
 Since the adc0832 is an 8 bit adc coonverter, the value returned will be between 0 and 255.`
