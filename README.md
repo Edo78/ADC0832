@@ -4,6 +4,12 @@ This module is a just a rewrite, based on [rpio](https://github.com/jperkin/node
 The adc0832 is an Integrated Circuit (IC) that performs analog to digital conversion.  This module
 provides an encapsulation of those capabilities for the Raspberry Pi environment.
 
+## Install
+To install this module you can use npm
+```
+npm install -S adc0832
+```
+
 ## Usage
 In order to use the module, we must require `adc0832`.  For example:
 ```
