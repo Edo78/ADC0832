@@ -15,7 +15,7 @@ module.exports.init = function(clk, dio, cs) {
     CS = cs;
 };
 
-module.exports.getValue = function() {
+module.exports.getValue = function(channel) {
     rpio.open(CLK, rpio.OUTPUT);
     rpio.open(DIO, rpio.OUTPUT);
     rpio.open(CS, rpio.OUTPUT);
@@ -36,7 +36,7 @@ module.exports.getValue = function() {
     rpio.write(CLK, rpio.LOW);
     rpio.msleep(10);
 
-    rpio.write(DIO, rpio.LOW); // Choose channel 0
+    rpio.write(DIO, channel ? rpio.LOW : rpio.HIGH); // Choose appropriate channel 0/1
     rpio.write(CLK, rpio.HIGH);
     rpio.msleep(10);
     rpio.open(DIO, rpio.INPUT);
