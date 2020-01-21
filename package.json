@@ -1,6 +1,6 @@
 {
   "name": "adc0832",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A module to manage adc0832 throug the raspberry pi gpio",
   "main": "adc0832.js",
   "scripts": {
