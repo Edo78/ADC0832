@@ -1,14 +1,13 @@
-This module is an update of [Edo78/ADC0832](https://github.com/Edo78/ADC0832) using the latest RPIO library.
-It also allows usage of both channel contrarily to the original library.
+This module is a just a rewrite, based on [rpio](https://github.com/jperkin/node-rpio), of https://github.com/nkolban/nodejs-adc0832 (which is based on wiringPi)
 
 # adc0832
-The adc0832 is an Integrated Circuit (IC) that performs analog to digital conversion of two channels: 0 and 1.  This module
+The adc0832 is an Integrated Circuit (IC) that performs analog to digital conversion.  This module
 provides an encapsulation of those capabilities for the Raspberry Pi environment.
 
 ## Install
 To install this module you can use npm
 ```
-npm install dclause/adc0832
+npm install -S adc0832
 ```
 
 ## Usage
