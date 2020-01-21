@@ -19,9 +19,12 @@ We must also initialize the module by explicitly calling init:
 ```
 adc0832.init(clk, dio, cs);
 ```
+The 3 parameters are the numbers of the gpio pins linked to the IC.
+
+
 To retrieve a value from the IC, we can call
 ```
-adc0832.getValue(clk, dio, cs)
+adc0832.getValue(channel)
 ```
-The 3 parameters are the numbers of the gpio pins linked to the IC.
+with channel being either 0 or 1.
 Since the adc0832 is an 8 bit adc coonverter, the value returned will be between 0 and 255.`
